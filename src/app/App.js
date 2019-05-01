@@ -5,9 +5,6 @@ import {Home} from './components/home';
 
 class App extends Component {
   render() {
-    var user = {
-      hobbies:["Sports","Reading"]
-    }
     return (
         <div className="container">
           <div className="row">
@@ -15,9 +12,7 @@ class App extends Component {
               <Header/>
             </div>
             <div className="col-xs-10">
-              <Home name={"Max"} age={27} user={user} >
-                <span>This is transcluded text</span>
-              </Home>
+              <Home name={"Max"} initialAge={30} />
             </div>
           </div>
         </div>
